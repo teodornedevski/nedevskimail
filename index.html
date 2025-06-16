@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nedevskimail</title>
+  <style>
+    :root {
+      --primary: #007aff; /* iOS blue */
+      --text-color: #333;
+      --bg: #f9f9f9;
+      --font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5em;
+      color: #666;
+    }
+
+    .email-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    a.mail-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      padding: 0.6em 1em;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: all 0.2s ease;
+      background: white;
+    }
+
+    a.mail-link:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+    }
+
+    .icon {
+      font-size: 1.2em;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>nedevskimail</h1>
+  <p>Reach us via email</p>
+
+  <div class="email-links">
+    <a class="mail-link" href="mailto:teodor@nedevskimail.com">
+      <span class="icon">📧</span> teodor@nedevskimail.com
+    </a>
+    <a class="mail-link" href="mailto:katerina@nedevskimail.com">
+      <span class="icon">📧</span> katerina@nedevskimail.com
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 nedevskimail
+  </footer>
+</body>
+</html>
